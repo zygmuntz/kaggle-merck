@@ -1,5 +1,11 @@
 'convert [Merck specific] CSV file to VW format'
 
+'''
+Usage:
+csv2vw.py train.csv train.vw
+csv2vw.py test.csv test.vw True		<--- for a test set, set the third argument to true to fill in labels with zeroes
+'''
+
 import sys, csv
 
 def construct_line( label, line, tag = '' ):
